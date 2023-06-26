@@ -1,0 +1,11 @@
+CREATE DATABASE weatherdb;
+
+USE weatherdb;
+
+CREATE TABLE weather (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    temperature DOUBLE,
+    pressure DOUBLE,
+    humidity DOUBLE,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
